@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import "../globals.css";
+import Header from "@/components/auth/Header";
 
 export const metadata: Metadata = {
   title: "Elite Resumer",
@@ -20,7 +19,6 @@ export default function RootLayout({
         <main className="mt-12 md:mt-20">
         {children}
         </main>
-        <Footer />
       </body>
     </html>
   );
